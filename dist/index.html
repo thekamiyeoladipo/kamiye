@@ -11,15 +11,78 @@
 </head>
 <body class="">
 
-    <h1 class="animate__animated animate__flash flex flex-col justify-item-center items-center text-5xl text-white">
-        Kamiye is here
-    </h1>
+    <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
+      <!-- Logo -->
+      <img src="images/logoWhite.svg" alt="brand-logo" width="120px">
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-8">
+        <a href="/" class="hover:underline underline-offset-4">home.</a>
+        <a href="/about" class="hover:underline underline-offset-4">projects.</a>
+        <a href="/projects" class="hover:underline underline-offset-4">about me.</a>
+        <a href="/contact" class="hover:underline underline-offset-4">find me.</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menuToggle" class="md:hidden focus:outline-none z-50">
+        <p id="hamburger">click</p>
+        <p id="close" class="hidden h-8 w-8">close</p>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500">
+      <a href="/" class="text-2xl menu-item">home</a>
+      <a href="/about" class="text-2xl menu-item">projects.</a>
+      <a href="/projects" class="text-2xl menu-item">about me.</a>
+      <a href="/contact" class="text-2xl menu-item">contact.</a>
+    </div>
+  </nav>
     
     
+    
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // This event runs even on browser "back"
+        window.onpageshow = function () {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.getElementById('hamburger');
+            const close = document.getElementById('close');
+
+            // Reset menu state on page load or back navigation
+            if (menu.classList.contains('menu-open')) {
+                menu.classList.remove('menu-open');
+                menu.classList.add('-translate-y-full');
+            }
+
+            // Reset icons
+            hamburger.classList.remove('hidden');
+            close.classList.add('hidden');
+        };
+    </script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
