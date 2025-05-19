@@ -19,10 +19,22 @@
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex space-x-8">
-        <a href="/" class="hover:underline underline-offset-4">home.</a>
-        <a href="/about" class="hover:underline underline-offset-4">projects.</a>
-        <a href="/projects" class="hover:underline underline-offset-4">about me.</a>
-        <a href="/contact" class="hover:underline underline-offset-4">find me.</a>
+        <a href="/" class="relative group overflow-hidden">home.
+          <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+          </span>
+        </a>
+        <a href="/about" class="relative group overflow-hidden">projects. <span
+            class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+          </span>
+        </a>
+        <a href="/projects" class="relative group overflow-hidden">about me. <span
+            class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+          </span>
+        </a>
+        <a href="/contact" class="relative group overflow-hidden">find me. <span
+            class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+          </span>
+        </a>
       </div>
 
       <!-- Hamburger Icon -->
@@ -34,10 +46,22 @@
 
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500">
-      <a href="/" class="text-2xl menu-item">home</a>
-      <a href="/about" class="text-2xl menu-item">projects.</a>
-      <a href="/projects" class="text-2xl menu-item">about me.</a>
-      <a href="/contact" class="text-2xl menu-item">contact.</a>
+      <a href="/" class="text-2xl menu-item relative group overflow-hidden">home.
+        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+        </span>
+      </a>
+      <a href="/about" class="text-2xl menu-item relative group overflow-hidden">projects.
+        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+        </span>
+      </a>
+      <a href="/projects" class="text-2xl menu-item relative group overflow-hidden">about me.
+        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+        </span>
+      </a>
+      <a href="/contact" class="text-2xl menu-item relative group overflow-hidden">contact.
+        <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
+        </span>
+      </a>
     </div>
   </nav>
     
