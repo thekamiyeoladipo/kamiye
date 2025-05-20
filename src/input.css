@@ -45,3 +45,11 @@ html, body {
     .menu-open .menu-item:nth-child(4) {
       transition-delay: 0.4s;
     }
+
+    #hero p {
+      color: #808080 !important;
+    }
+
+    #nav p, a {
+      color: #808080 !important;
+    }
