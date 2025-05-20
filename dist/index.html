@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      @media (max-width: 768px) {
+        #logo {
+          width: 100px; /* Adjust the width for mobile */
+        }
+      }
+    </style>
 </head>
 <body class="">
 
     <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 shadow-md">
+  <nav id="nav" class="fixed w-full z-50">
     <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
       <!-- Logo -->
-      <img src="images/logoWhite.svg" alt="brand-logo" width="120px">
+      <img id="logo" src="images/logoWhite.svg" alt="brand-logo" width="120px" height="auto">
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex space-x-8">
-        <a href="/" class="relative group overflow-hidden">home.
+        <a href="#hero" class="relative group overflow-hidden">home.
           <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
           </span>
         </a>
@@ -45,8 +52,8 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500">
-      <a href="/" class="text-2xl menu-item relative group overflow-hidden">home.
+    <div id="mobileMenu" class="overflow-y-auto fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500">
+      <a href="#hero" class="text-2xl menu-item relative group overflow-hidden">home.
         <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full">
         </span>
       </a>
@@ -64,6 +71,32 @@
       </a>
     </div>
   </nav>
+
+  <!--Hero section-->
+<section id="hero" class="pt-[100px] min-h-screen flex items-center bg-black text-white">
+  <div class="max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-12">
+    <!-- Left Text Column -->
+    <div class="md:w-3/5 w-full text-left space-y-6">
+      <!-- Your text content here -->
+      <h1 class="text-2xl md:text-6xl font-bold mb-4">Hello👋</h1>
+      <p class="text-lg md:text-xl text-gray-300">I’m a frontend developer building modern, clean, and responsive web
+        experiences.</p>
+    </div>
+
+    <!-- Right Image Column -->
+    <div class="md:w-2/5 w-full flex justify-center">
+      <img src="images/kamiye.jpg" alt="A picture of me"
+        class="rounded-2xl w-64 md:w-80 object-cover wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" />
+    </div>
+  </div>
+  <p>
+
+  </p>
+</section>
+
+
+
+
     
     
     
