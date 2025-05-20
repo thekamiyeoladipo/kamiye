@@ -2,12 +2,14 @@
     const hamburger = document.getElementById('hamburger');
     const close = document.getElementById('close');
     const mobileMenu = document.getElementById('mobileMenu');
+    const body = document.body;
 
     menuToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('-translate-y-full');
       mobileMenu.classList.toggle('menu-open');
       hamburger.classList.toggle('hidden');
       close.classList.toggle('hidden');
+       body.classList.toggle('overflow-hidden');
     });
 
 barba.init({
@@ -31,3 +33,15 @@ barba.init({
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPage = location.pathname.split('/').pop();
+  const navLinks = document.querySelectorAll('nav a');
+  
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+});
