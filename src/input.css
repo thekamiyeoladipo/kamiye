@@ -89,3 +89,8 @@ html, body {
   color: orangered !important;
   /* or any other styling to highlight */
 }
+
+.logo {
+  visibility: hidden !important;
+}
+
