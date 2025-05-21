@@ -17,7 +17,7 @@
 html, body {
     font-family: "Roboto Mono", monospace !important;
     background-color: #0f0f0f !important;
-    color: #fff !important;
+    
 }
 
 
@@ -92,5 +92,9 @@ html, body {
 
 .logo {
   visibility: hidden !important;
+}
+
+#here {
+  color: orangered !important;
 }
 
