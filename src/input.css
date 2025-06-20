@@ -62,7 +62,7 @@ body.loading {
 .loader .d {
   animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 3);
 }
-.loader .ispan {
+.loader .i span {
   animation-delay: calc(var(--ANIMATION-DELAY-MULTIPLIER) * 4);
 }
 .loader .n {
