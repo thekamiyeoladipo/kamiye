@@ -67,37 +67,6 @@ backToTopBtn.addEventListener("click", () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const loader = document.querySelector('.loader');
 
-  // Check if user has visited before
-  const hasVisited = localStorage.getItem('hasVisited');
-
-  if (!hasVisited && loader) {
-    // Mark as visited
-    localStorage.setItem('hasVisited', 'true');
-
-    // Disable scroll
-    document.body.classList.add('loading');
-
-    const hideLoader = () => {
-      loader.style.opacity = '0';
-      loader.style.pointerEvents = 'none';
-      document.body.classList.remove('loading'); // Re-enable scroll
-      setTimeout(() => loader.remove(), 1000); // Optional cleanup
-    };
-
-    // Fade out after 4 seconds or on load (whichever comes first)
-    let loaderTimeout = setTimeout(hideLoader, 4000);
-    window.addEventListener('load', () => {
-      clearTimeout(loaderTimeout);
-      hideLoader();
-    });
-
-  } else {
-    // Instantly remove loader if user already visited
-    if (loader) loader.remove();
-  }
-});
 
 
