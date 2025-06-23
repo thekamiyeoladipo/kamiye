@@ -67,6 +67,54 @@ backToTopBtn.addEventListener("click", () => {
 
 
 
+gsap.registerPlugin(ScrambleTextPlugin);
+
+gsap.to(".champ", {
+  duration: 2,
+  scrambleText: {
+    text: "hey champ!👋",
+    chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
+    revealDelay: 0.3,
+    speed: 0.4
+  },
+  delay: 0.5 // wait half a second before scrambling starts
+});
+
+gsap.to(".about", {
+  duration: 2,
+  scrambleText: {
+    text: "about me.",
+    chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
+    revealDelay: 0.3,
+    speed: 0.4
+  },
+  delay: 0.5 // wait half a second before scrambling starts
+});
+
+
+gsap.to(".proj", {
+  duration: 2,
+  scrambleText: {
+    text: "projects.",
+    chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
+    revealDelay: 0.3,
+    speed: 0.4
+  },
+  delay: 0.5 // wait half a second before scrambling starts
+});
+
+
+gsap.to(".contact", {
+  duration: 2,
+  scrambleText: {
+    text: "i'd like to hear from you😊",
+    chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
+    revealDelay: 0.3,
+    speed: 0.4
+  },
+  delay: 0.5 // wait half a second before scrambling starts
+});
+
 
 
 
