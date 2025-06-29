@@ -1273,20 +1273,16 @@ video {
   padding-top: 8rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-40 {
   padding-top: 10rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-2\.5 {
-  padding-top: 0.625rem;
 }
 
 .text-left {
@@ -1686,6 +1682,13 @@ html, body {
   color: orangered !important;
 }
 
+.tag {
+  background-color: #4f4d4d;
+  border-radius: 30px;
+  padding: .5rem;
+  border: 1px solid #808080;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1893,5 +1896,3 @@ html, body {
     line-height: 1.75rem;
   }
 }
-
-
