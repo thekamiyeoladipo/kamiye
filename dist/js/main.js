@@ -72,7 +72,7 @@ gsap.registerPlugin(ScrambleTextPlugin);
 gsap.to(".champ", {
   duration: 2,
   scrambleText: {
-    text: "hey champ!👋",
+    text: "hey champp!👋",
     chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
     revealDelay: 0.3,
     speed: 0.4
